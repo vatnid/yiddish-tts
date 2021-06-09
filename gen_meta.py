@@ -10,6 +10,6 @@ with open(infile, "r") as f:
         output.append(f"{i}|{line.strip()}")
         i += 1
 
-with open(f"{infile[:-4]}_metaaa.txt", "w") as f:
+with open(f"{infile[:-4]}_transcript.txt", "w") as f:
     for line in output:
         f.write(f"{line}\n")
