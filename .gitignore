@@ -1,8 +1,8 @@
 .DS_Store
 .obsidian/
 .vscode/
-ashtetl/cut_audio/
-ashtetl/raw_audio/
-ashtetl/raw_ocr/
-ashtetl/wavs/
+*/cut_audio/
+*/raw_audio/
+*/raw_ocr/
+*/wavs/
 ashtetl/ashtetl_full.wav
