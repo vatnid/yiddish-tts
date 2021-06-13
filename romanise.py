@@ -112,5 +112,8 @@ for line in input:
     output.append(temp.strip())
 
 with open(f"{infile[:-4]}_rom.txt", "w") as f:
-    for line in output:
-        f.write(f"{line}\n")
+    for i, line in enumerate(output):
+        if i == 0:
+            f.write(f"{line}")
+        else:
+            f.write(f"\n{line}\n")
