@@ -12,6 +12,6 @@ for filename in os.listdir("../Herbikher/zilberberg"):
         
 with open(f"all_labs.txt", "w") as f:
     for i, k in enumerate(sents):
-        f.write(f"{sents[k]}")
+        f.write(f"{k}|{sents[k]}")
         if i != 0:
             f.write("\n")
