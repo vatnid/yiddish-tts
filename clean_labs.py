@@ -23,8 +23,12 @@ for filename in os.listdir("../Herbikher/zilberberg"):
         l = re.sub(r"יי", r"ײ", l)
         l = re.sub(r"וו", r"װ", l)
         l = re.sub(r"וי", r"ױ", l)
-        l = re.sub(r"[\"„—\']", r"", l)
-        l = re.sub(r"([()!,.:;?])", r"\1 ", l)
+        l = re.sub(r"[\"„—\'*]", r"", l)
+        l = re.sub(r"\. \. \.", r".", l)
+        l = re.sub(r" ?([,.:;!?])( [,.:;!?])?", r"\1", l)
+        l = re.sub(r"\\\(", r"(", l)
+        l = re.sub(r"\( ", r"(", l)
+        l = re.sub(r" \)", r")", l)
         l = re.sub(r"\s+", r" ", l)
 
         with open(f"../Herbikher/zilberberg/{filename}", "w") as f:
