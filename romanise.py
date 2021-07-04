@@ -116,4 +116,4 @@ with open(f"{infile[:-4]}_rom.txt", "w") as f:
         if i == 0:
             f.write(f"{line}")
         else:
-            f.write(f"\n{line}\n")
+            f.write(f"\n{line}")

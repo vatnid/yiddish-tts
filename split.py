@@ -25,3 +25,5 @@ for i in range(len(sents)):
     end_frame = int(rate * sents[i][1])
     target_data = data[begin_frame:end_frame]
     wavfile.write(f"{exportdir}/{i+1}.wav", rate, target_data)
+
+# python3 split.py books/zilberberg/dershlisl/cleaned\ audio/b.json books/zilberberg/dershlisl/cleaned\ audio/dershlisl_b.wav books/zilberberg/dershlisl/cleaned\ audio/b
