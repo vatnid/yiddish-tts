@@ -1,3 +1,5 @@
+# find the length of the longest sentence
+
 import sys
 
 infile = sys.argv[1]

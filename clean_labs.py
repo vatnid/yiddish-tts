@@ -1,10 +1,11 @@
 import os
 import re
+from tools import 
 
-for filename in os.listdir("../Herbikher/zilberberg"):
+for filename in os.listdir("test/gold-labs/zilberberg/a/unnormalised"):
     if filename.endswith(".lab"):
-        l = ""    
-        with open(f"../Herbikher/zilberberg/{filename}", "r") as f:
+        l = ""
+        with open(f"test/gold-labs/zilberberg/a/unnormalised/{filename}", "r") as f:
             for line in f:
                 l = line
 
